@@ -1,11 +1,14 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
-  return (
-    <div className='text-3xl bg-orange-500 text-white'>
-      Jus an app to introduced by me
-    </div>
-  )
+  return <BrowserRouter>
+  <Routes>
+
+    
+  </Routes>
+  
+  </BrowserRouter>
 }
 
 export default App
