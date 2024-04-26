@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {signInStart} from '../redux/user/userSlice.js'
 import { signInSuccess } from '../redux/user/userSlice.js';
 import { signInFaliure } from '../redux/user/userSlice.js';
+import OAuth from '../components/OAuth.jsx';
 
 
 
@@ -60,7 +61,7 @@ export default function SignIn() {
         className=' border p-2 rounded-lg' id='password' onChange={handleChange}
         />
         <button disabled = {loading} className=' bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-90 disabled:opacity-80 '> {loading ? 'Loading..... ' : 'Sign In'} </button>
-
+        <OAuth/>
       </form>
       <div className=' flex gap-2 mt-5'>
         <p>Do not have an account? </p>
