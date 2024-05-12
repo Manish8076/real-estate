@@ -67,11 +67,16 @@ export default function Listing() {
                     <FaShare
                     className=' text-slate-500'
                     onClick={()=> {
-                        navigator.clipboard.writeText(window.location.href);
-                        setCopied(true);
-                        setTimeout(()=> {
+                         navigator.clipboard.writeText(window.location.href)
+                         .then(()=> {
+                            setCopied(true);
+                            console.log(copied);
+                            setTimeout(()=> {
                             setCopied(false);
-                        },2000)
+                            },2000)
+                         }).catch((error)=>{
+                            console.error("Error while copying to clipboard", error);
+                         })
                     }}
                     />
                 </div>
