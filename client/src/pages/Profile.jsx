@@ -228,6 +228,8 @@ export default function Profile() {
       <button onClick={handleShowListings} className=" text-green-700 w-full font-semibold ">Show Listings</button>
       <p className=" text-red-700 mt-5"> {showListingsError ? 'Error showing listings' : ''} </p>
 
+      
+
       {userListings &&
        userListings.length > 0 && 
        <div className=" flex flex-col gap-4">
