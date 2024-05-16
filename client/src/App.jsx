@@ -11,6 +11,7 @@ import CreateListing from './pages/CreateListing'
 import UpdateLising from './pages/UpdateLising'
 import Listing from './pages/Listing'
 import Search from './pages/Search'
+import Footer from './components/Footer'
 
 
 function App() { 
@@ -32,6 +33,7 @@ function App() {
   </Route>
 
   </Routes>
+  <Footer />
   
   </BrowserRouter>
 }
