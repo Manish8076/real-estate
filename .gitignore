@@ -11,7 +11,7 @@ lerna-debug.log*
 
 node_modules
 dist
-dist-sar
+dist-ssr
 *.local
 
 #Editor directories and flies 
