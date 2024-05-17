@@ -9,9 +9,6 @@ lerna-debug.log*
 
 
 
-node_modules
-dist
-dist-ssr
 *.local
 
 #Editor directories and flies 
@@ -26,3 +23,4 @@ dist-ssr
 *.sw?
 
 .env
+node_modules
